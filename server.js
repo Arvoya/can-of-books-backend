@@ -21,13 +21,13 @@ app.get('/', (request, response) => response.status(200).send('Default Route wor
 
 app.get('/books', async (request, response) => {
 
-app.get('*', (request, response) => response.status(400).send('Resource Not Found'));
 
   const books = await Book.find({});
 
   response.json(books)
 
 })
+app.get('*', (request, response) => response.status(400).send('Resource Not Found'));
 
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
