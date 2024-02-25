@@ -33,4 +33,16 @@ async function deleteBooks(request, response) {
 	}
 }
 
-module.exports = { readBooks, createBooks, deleteBooks};
+async function updateBooks(request, response) {
+	const id = request.params.id;
+
+	try{
+		response.status(200).send('successfully updated');
+		await Book.findByIdAndUpdate(id, request.body, {new: true});
+	} catch (error) {
+		console.error(error);
+		response.status(500).send(`Unable to update book with id ${id}`);
+	}
+}
+
+module.exports = { readBooks, createBooks, deleteBooks, updateBooks};

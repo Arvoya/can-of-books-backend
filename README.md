@@ -43,3 +43,15 @@ Start time: 12:20pm
 Finish time: 1:30pm
 
 Actual time needed to complete: 50 minutes
+
+---
+
+Update: As a user, I want to update book details on my list, so that I can change the book status, or update the book details as I learn more about it.
+
+Estimate of time needed to complete: 30 min
+
+Start time: 3:30
+
+Finish time: 4:01pm
+
+Actual time needed to complete: 31 minutes
