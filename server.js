@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const Book = require('./models/book');
-const {readBooks, createBooks, deleteBooks} = require("./handlers");
+const {readBooks, createBooks, deleteBooks, updateBooks} = require("./handlers");
 
 const app = express();
 
@@ -25,6 +25,7 @@ app.get('/', (request, response) => response.status(200).send('Default Route Wor
 app.get('/books', readBooks);
 app.post('/books', createBooks);
 app.delete('/books/:id', deleteBooks);
+app.put('/books/:id', updateBooks);
 app.get('*', (request, response) => response.status(400).send('Resource Not Found'));
 
 
