@@ -55,3 +55,15 @@ Start time: 3:30
 Finish time: 4:01pm
 
 Actual time needed to complete: 31 minutes
+
+---
+
+Authentication: As a user, I'd like to sign in with OAuth, so that I can authenticate to the site without creating yet-another username/password combo to potentially get hacked or lost.
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 3:50pm
+
+Finish time: 4:55pm
+
+Actual time needed to complete: 1 hour
